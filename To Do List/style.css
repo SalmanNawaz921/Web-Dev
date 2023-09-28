@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #121220;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: x-large;
+  font-weight: bolder;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #7f2120;
+  margin-top: 15vh;
+}
+
+.container input {
+  background-color: transparent;
+  border: 2px solid #7f2120;
+  padding: 1vh 2vw;
+  margin: auto;
+  font-size: larger;
+  font-weight: bolder;
+  color: #7f2120;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  background-color: #1a1728;
+  color: #7f2120;
+}
+
+.card-text {
+  font-size: large;
+  font-weight: normal;
+}

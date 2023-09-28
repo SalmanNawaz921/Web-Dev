@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1 style="font-size: 3em;white-space: nowrap;">Generate Your Password</h1>
+    <div class="min-container">
+      <input type="text" name="display" id="display" readonly />
+      <img src="./assets/copy.png" alt="" id="copy" />
+      <img src="./assets/refresh.png" alt="" id="reload" />
+      <div class="box">
+        <label for="veryStrong">Very Strong</label>
+        <input type="checkbox" name="veryStrong" id="veryStrong" />
+      </div>
+      <div class="box">
+        <label for="strong">Strong</label>
+        <input type="checkbox" name="strong" id="strong" />
+      </div>
+      <div class="box">
+        <label for="weak">Weak</label>
+        <input type="checkbox" name="weak" id="weak" />
+      </div>
+      <div class="box">
+        <label for="funny">Funny</label>
+        <input type="checkbox" name="funny" id="funny" />
+      </div>
+      <div class="box">
+        <label for="length">Length</label><input type="range" name="length" id="length" value="20" step="1" min="1"
+          max="20" />
+        <span id="length-display">20</span>
+      </div>
+      <input type="button" value="Generate" id="generate" />
+    </div>
+  </div>
+  <footer>
+    &copy; Created By Salman
+  </footer>
+</body>
+<script>
+  let checkBoxes = document.querySelectorAll('input[type="checkbox"]');
+
+  checkBoxes.forEach((checkbox) => {
+    checkbox.addEventListener("change", () => {
+      checkBoxes.forEach((otherCheckbox) => {
+        if (otherCheckbox !== checkbox) {
+          otherCheckbox.checked = false;
+        }
+      });
+    });
+  });
+</script>
+<script src="script.js"></script>
+
+</html>

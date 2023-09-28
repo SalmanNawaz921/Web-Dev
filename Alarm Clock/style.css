@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+}
+
+.alarm-message {
+  display: block;
+  font-size: 16px;
+  color: red;
+  /* Add more styles as needed */
+}
+
+
+body {
+  background-color: #deaa;
+}
+
+.container {
+  gap: 2vh;
+  height: auto;
+  width: 80vw;
+  max-width: 26rem;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin: auto;
+  margin-top: 10vh;
+  padding: 2rem;
+}
+
+.time {
+  gap: 1vw;
+  display: flex;
+  align-items: center;
+  margin-block: 0;
+}
+
+.time h3 {
+  flex-basis: 100%;
+}
+
+#hr-dropdown,
+#min-dropdown,
+#sec-dropdown,
+#hr-dropdown option,
+#min-dropdown option,
+#sec-dropdown option {
+  background-color: white;
+  padding: 0.5rem 0.5rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+#alarmBtn {
+  padding: 1rem 1.5rem;
+  background-color: rgb(251, 157, 16);
+  color: white;
+  border-radius: 2em;
+  font-size: 1rem;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    max-width: none;
+    margin-top: 5vh;
+  }
+
+  #hr-dropdown,
+  #min-dropdown,
+  #sec-dropdown,
+  #hr-option,
+  #min-option,
+  #sec-option,
+  #alarmBtn {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+  }
+
+  /* Adjust dropdown option size and padding for smaller screens */
+  .dropdown li {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
