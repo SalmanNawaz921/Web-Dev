@@ -1,18 +1,19 @@
-# To-Do List
+# Tic-Tac-Toe Game
 
-Stay organized and boost your productivity with my To-Do List project. Created using HTML, CSS, and JavaScript, this digital task manager helps you manage your tasks effectively.
+Welcome to my Tic-Tac-Toe game project! This interactive game is built using HTML, CSS, and JavaScript to provide a modern twist on the classic game we all know and love. 
 
 ## Features
 
-- Create and manage to-do items
-- Check off completed tasks
-- Simplify your task management
+- Play against a friend in multiplayer mode
+- Intuitive user interface designed with CSS
+- Hours of entertainment and strategic gameplay
 
-## How to Use
+## How to Play
 
 1. Open the index.html file in your browser.
-2. Add your to-do items to the list.
-3. Check them off as you complete them.
-4. Keep track of your tasks effortlessly.
+2. Start a game against your friend.
+3. Take turns placing your symbols on the board.
+4. The first player to get three in a row wins!
 
-Simplify your life and stay on top of your responsibilities with this sleek digital task manager. Try it out now!
+Enjoy the nostalgia and challenge of Tic-Tac-Toe! Play it now in your browser.
+
