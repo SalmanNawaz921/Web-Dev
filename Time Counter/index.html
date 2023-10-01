@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 style="white-space: nowrap;">Count Your Limits!!!</h1>
+        <div class="min-container">
+            <label for="">Date
+                <input type="date" id="date">
+            </label>
+            <label for="">Time
+                <input type="time" id="time">
+            </label>
+        </div>
+        <div class="min-container" style="display: grid; grid-template-columns: repeat(3,1fr);">
+            <button id="calculateBtn">Calculate</button>
+            <button id="stopBtn">Stop</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+        <div class="min-container" style="display: none;">
+            <div class="values">
+                <label for="count-days">Days</label>
+                <div id="count-days">0</div>
+            </div>
+            <div class="values">
+                <label for="count-hours">Hours</label>
+                <div id="count-hours">0</div>
+            </div>
+            <div class="values">
+                <label for="count-minutes">Minutes</label>
+                <div id="count-minutes">0</div>
+            </div>
+            <div class="values">
+                <label for="count-seconds">Seconds</label>
+                <div id="count-seconds">0</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

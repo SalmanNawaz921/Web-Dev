@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: rgb(128, 128, 203);
+  color: black;
+}
+
+h1 {
+  text-align: center;
+}
+/* .container {
+  width: 100vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+} */
+.container {
+  gap: 2vh;
+  height: auto;
+  width: 80vw;
+  max-width: 26rem;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin: auto;
+  margin-top: 10vh;
+  padding: 5rem 18rem;
+}
+
+.container .min-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.min-container label {
+  margin-bottom: 10px;
+}
+
+.min-container input {
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-size: x-large;
+  border: 2px solid black;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* .min-container:nth-child(1) {
+  margin-left: 20px;
+} */
+
+.min-container .values {
+  display: flex;
+  flex-direction: column;
+}
+
+.min-container button {
+  padding: 8px 20px;
+  border-radius: 20px;
+  color: black;
+  font-size: x-large;
+  background: transparent;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: 0.2s all ease;
+}
+
+.min-container button:hover {
+  transform: scale(1.12);
+  border: 1px solid black;
+}
+.min-container button:nth-child(3) {
+  margin-right: 15px;
+}
+
+.min-container .values {
+  text-align: center;
+  font-size: x-large;
+  color: black;
+}
